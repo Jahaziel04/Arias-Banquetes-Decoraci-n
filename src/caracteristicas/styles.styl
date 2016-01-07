@@ -1,0 +1,84 @@
+.title
+	margin 1em 0 .5em 0
+	text-align: center
+.subtitle
+	margin-bottom 2em
+	font-weight normal
+	text-align: center
+	
+	
+.content
+	background-color $white-project
+	margin 0 auto 3em auto
+	display flex
+	width 96%
+	flex-wrap wrap
+	justify-content space-around
+	&-box
+		margin 1%
+		background-color $white-project
+		width 100%
+		//width 31%
+		min-width 238px
+		//min-width 350px
+		display flex 
+		
+		&:hover .flex .circulo
+			background #92b331
+			.circulo-a
+				background #92b331
+				color white
+
+@media (min-width: 911px)
+	.content
+		&-box
+			width 31%
+
+.flex
+	display flex
+	color #92b331
+	margin-top .5em
+	min-width 100px
+	
+	.circulo
+		transition all .2s ease
+		box-shadow 0px 4px 38px -10px rgba(0,0,0,0.4)
+		height 80px
+		width 80px
+		border-radius 40px
+		display flex
+		align-items center
+		justify-content center
+		background-color white
+		&-a
+			height 73px
+			width 73px
+			border 2px solid $white-proyect
+			border-radius 36.5px
+			display flex
+			align-items center
+			justify-content center
+			background-color white
+			font-size .7em
+		
+		&:hover
+			background-color #92b331
+		
+			.circulo-a
+				background #92b331
+				color white
+		
+
+	&-a
+		color #2d2b2b
+		margin-left 1em
+		display flex
+		flex-direction column
+		text-align left
+		&--title
+			color #2d2b2b
+		&--p
+			margin-top .5em
+			display flex
+			text-align left
+			

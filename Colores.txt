@@ -1,0 +1,9 @@
+Header :A41652
+Azul de icono: 009DEA e circulo de la paginacion y crea tu paquete
+Fondeo de caracteristicas: E6E6E6
+Boton rosa: E6E6E6
+Cuadro verde secundario de Servicios: a0c533
+Cuadro verde de Servicios: 92B331
+Fondo gris de servicios: E6E6E6
+Fonde de portafolio verde: 92B331
+

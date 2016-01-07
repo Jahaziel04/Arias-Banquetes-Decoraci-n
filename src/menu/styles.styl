@@ -1,0 +1,103 @@
+
+.size-img
+  width: 100%
+
+
+.size-image
+  width: 100%
+.title-brand
+  font-size 1em
+  &--bd
+    font-size .8em
+    margin-left .5em
+
+.brand_title
+  display flex
+.navbar {
+  background: #A41652;
+  .toggle, 
+  .brand {
+    display: flex;
+    align-items center
+  }
+  .link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1.5em;
+    text-decoration: none;
+    background: $header-color;
+    color: white;
+    &:hover,&:active {
+      background: $rosa-secundario;
+    }
+  }
+  .brand {
+    text-align: center;
+    color: white;
+    display flex
+    margin-right 4em
+  }
+  .toggle {
+    position absolute;
+    right 0;
+    top  10px;
+    padding: 1em;
+    color: white;
+    vertical-align: middle;
+    font-size: 1.2em
+  }
+}
+
+@media (min-width: 48em) {
+    .navbar {
+      display: flex;
+      .left,.right {
+        display: flex;
+        align-items center
+        flex: 1;
+      }
+      .link {
+          width: auto;
+      }
+      .right {
+        justify-content: space-around;
+      }
+      .left {
+        justify-content: center;
+      }
+      .toggle {
+        display: none;
+      }
+    }
+}
+
+//En la clase left hace que cuando llegue a 1020px
+// se cambie de direccion la caja
+@media (max-width: 1020px) {
+  .left{
+    flex-direction: column;
+  }
+  }
+
+.navbar {
+  div {
+    display: none;
+    @media (min-width: 48em) {
+      display: flex;
+      //align-items center
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+.navbar.active {
+  .toggle {
+    background: $header-color;
+    color: white;
+  }
+  div {
+    display: block;
+  }
+}
+}

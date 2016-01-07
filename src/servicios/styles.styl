@@ -1,0 +1,221 @@
+
+.medium
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+  
+
+.servicios
+  display flex
+  justify-content center
+  //background-color #e6e6e6;
+  flex-wrap wrap
+  width 80%
+  padding 2em 0
+  margin 0 auto
+  
+
+.parra
+  
+  margin 0 0em
+  
+.box 
+  width: 232px;
+  height: 250px;
+  margin: 1% 1%;
+  padding: 15px;
+  background: #92B331;
+  
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,0.4);
+  cursor: pointer;
+  transition box-shadow .2s ease
+  
+
+  &:hover 
+    box-shadow: 0 0 27px -2px
+    z-index: 1
+    
+  
+
+    
+
+//// Contenedor del icono////
+//Arreglado con flex-box///
+.box .icon-cont {
+  border: 6px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  display: flex;
+  align-items center 
+  text-align: center;
+  
+  justify-content center
+  
+  box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);
+}
+
+.box .icon-cont i {
+  color: $white-proyect;
+  opacity: 0.6;
+  font-size: 2.5em;
+}
+.box:hover .icon-cont {
+  animation: shady 4s linear 1;
+}
+
+
+/////Fin de bloque
+
+////Animacion 
+
+
+@keyframes shady {
+  0% {box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);}
+  20% {box-shadow: 0 0 0 100px rgba(255,255,255,0), 0 0 0 0px rgba(3, 108, 129, 0);}
+  20.1% {box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);}
+  50% {box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);}
+  70% {box-shadow: 0 0 0 100px rgba(255,255,255,0), 0 0 0 0px rgba(3, 108, 129, 0);}
+  70.1% {box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);}
+  100% {box-shadow: 0 0 0 0px rgba(255,255,255,0.5), 0 0 0 0px rgba(3, 108, 129, 0.5);}
+}
+
+////Fin de la Animacion
+
+
+///Titulo que va dentro de la caja
+
+
+.box h3 {
+  color: $white-proyect;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0);
+  
+  position: absolute;
+  top: 125px;
+  width: 70%;
+  left: 10%;
+  z-index: 4;
+}
+
+////Fin del bloque
+
+///Lista que esta oculta
+
+.box ul {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: $white-proyect;
+  font-size: 13px;
+  line-height: 28px;
+  text-indent: 14px;
+  margin: 25px;
+  margin-top: 380px;
+  list-style-type: disc;
+}
+
+//No se usasa
+.box ul.hidden {
+  opacity: 0;
+}
+//No se usa aun...
+
+//
+
+.box a.expand {
+  width: 35px;
+  height: 35px;
+  background: $white-proyect;
+  font-weight: 600;
+  color: #036C81;
+  display: block;
+  margin: 15px auto 25px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  transition all .2s ease
+}
+
+//Transicion de el hide del "+"
+@media (min-width: 911px)
+  .box a.expand
+    transition all .4s ease
+  
+  
+///Hace que el menos no se vea cuando
+///no esta seleccionado
+.box a.expand span.minus {
+  opacity: 0;
+}
+.box a.expand span.plus {
+  opacity: 1;
+  padding-left: 5px;
+}
+//Fin del bloque
+
+
+.box.selected a.expand {
+  display: block;
+  position: absolute;
+  left: 180px;
+  right: -29px;
+  bottom: -39px;
+  width: 80px;
+  height: 50px;
+  background: #eee;
+  color: #036C81;
+  transform: rotate(-45deg);
+}
+.box.selected a.expand span {
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 38px;
+  transform: rotate(45deg);
+  font-size: 24px;
+}
+.box.selected a.expand span.minus {
+  opacity: 1;
+}
+.box.selected a.expand span.plus {
+  opacity: 0;
+}
+.box.selected .icon-cont {
+  transform: scale(1.5,1.5);
+  opacity: 0.3;
+  position: absolute;
+  top: -20px;
+  left: -5px;
+  right: 180px;
+}
+.box.selected:hover .icon-cont {
+  animation: none;
+}
+.box.selected h3 {
+  padding: 32px 15px 15px 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  
+  top: 16px;
+}
+.box.selected ul.hidden {
+  opacity: 1;
+  margin-top: 95px;
+}
+
+
