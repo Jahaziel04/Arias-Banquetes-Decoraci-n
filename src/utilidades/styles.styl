@@ -93,6 +93,9 @@
 .back-grey
   background-color: $white-about
   
+.movement-slow
+    transition: all 700ms ease-out;
+    
 
 // Boton rosa
 // boton verde
@@ -106,6 +109,32 @@
   border: solid transparent;
   border-radius: 4px;
   transition background-color .3s ease
+  &-back
+    color: #c50e5b;
+    display inline-block
+    margin 0 auto
+    text-align: center
+    padding: 0 1em;
+    transition: all 700ms ease-out;
+    &:hover
+      color white
+    
+  &-trapecio-top
+    width: 150px;
+    height: 0px;
+    background-color: #92b331;
+    border-right: 80px solid transparent;
+    border-left: 80px solid transparent;
+    border-top: 43px solid #C50E5B;
+    position: relative;
+    display flex
+    color white
+    margin 0 auto
+    &:hover
+      border-top-color #A41652
+    
+    
+
   &:hover
     background-color #C50E5B
   
