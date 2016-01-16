@@ -9,7 +9,7 @@ html(lang="es")
 body
 	section(class="box-title")
 		
-	//include ./menu/template.jade
+	include ./menu/template.jade
 	section(class="container")
 		section(class="pru")
 			article(class="row center")
@@ -59,7 +59,10 @@ body
 							span(class="row") 9222561684
 							span(class="row") 9222561684
 	
+	include ./footer/template.jade
 
+	include ./derechos/template.jade		
+	
 	script(src="./js/bundle.js")
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 	script(class="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
