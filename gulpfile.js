@@ -41,7 +41,7 @@ gulp.task('build:html', function() {
 		.pipe(jade({
 			pretty: false
 			}))
-		.pipe(gulp.dest('build/'));
+		.pipe(gulp.dest('./build'));
 	});
 
 gulp.task('build:css', function() {
