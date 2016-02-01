@@ -34,8 +34,11 @@ $('.btn-list').on('click', function() {
 
   //document.addEventListener('DOMContentLoaded', onDOMLoad);
 
-
-
+//Escroll lento para arriba
+$('#xxx').click(function(){
+    $('html, body').animate({scrollTop:0}, 'slow');
+    return false;
+});
 
   function onDOMLoad() {
     var btnMenu = document.getElementById('btnMenu');
