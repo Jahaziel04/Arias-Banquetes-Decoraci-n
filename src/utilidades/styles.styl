@@ -1,8 +1,85 @@
+//Estilo de numeros telefonicos
+.number
+  margin 1em 0
+  &-style
+    padding .5em
+    display inline-block
+    font-weight 700
+
+.icon-mobile::before
+  color $green-proyect2
+  font-size: 1.4em
+
+.icon-phone::before
+  color $green-proyect2
+  font-size: 1.4em
+
+.icon-facebook::before
+  color #009DEA
+  font-size: 1.4em
+//Titulo decorado
+.title-deco
+  border-bottom 4px solid #8bc34a
+
+// XXXXXXXXXXXXXX
+//Caja de horario
+.box-schedule
+  color #686868
+  width: 100%
+  &-bottom
+    margin 0
+    padding .4em
+    background-color $green-proyect
+    border-radius 15px 15px 0 0
+    color white
+    font-weight 700
+  &-top
+    margin 0
+    padding .4em
+    background-color $green-proyect
+    border-radius 0 0 15px 15px
+    color white
+    font-weight 700
+    
+  
+
+//Utilizalo cuando listes cosas y quieres el estilo unorderlist
+.listado
+  list-style-type: inherit;
+  padding-left 1em
+
+
+//Estilo de lista para mobiliario( Mesas )
+.list-table
+  font-weight 700
+  &--normal
+    font-weight normal
+
+//Texto subrayado
+//ocupada en <span>
+.subrayado
+  display inline-block
+  border-bottom 2px solid #a41652
+//Color blanco
+.color-white
+  color white
+
+//Peso de fuente
+.normal
+  font-weight normal
+
+//parrafo
+.parra 
+  margin 1em .2em
+//Texto de FACEBOOK
+.link-facebook
+  color #43609C
+
 //Link rosa
 .link-pink
   color #c50e5b
 .link-gris
-  color rgba(0,0,0,.8)
+  color #686868
 
 //Preguntas frecuentes
 
@@ -42,6 +119,11 @@ a
   color $white-proyect
   display inline-block
   border-bottom 3px solid $header-color
+  &:hover
+    border-color $green-proyect2
+    
+.faq:hover .icon-question-circle
+  color $green-proyect2
 
 .text-question
   color $white-proyect
@@ -56,10 +138,13 @@ a
   background-color: rgba(66, 66, 66, 0.18)
   padding: 1em;
   //text-shadow -1px 1px 17px rgba(0,0,0,0.4)
+  box-shadow: 1px 1px 6px -3px black;
   &-2
     padding 0 0 9em 0
     color $white-proyect
     text-shadow -1px 1px 17px rgba(0,0,0,0.4)
+  &--sin_sombra
+    padding 1em
 
 
 .title-section
@@ -214,11 +299,14 @@ a
 
 .centrar
   margin 0 auto
+  
+//Estilo de fuente 
 // Cambia a negrita
 .negrita
   font-weight 700
   margin-left .4em
-
+.cursiva
+  font-style italic
 
 // boton cicular
 .button-circle
