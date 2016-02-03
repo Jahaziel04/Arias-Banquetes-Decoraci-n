@@ -11,8 +11,7 @@
 .tab_container
   width: 100%
   margin o auto
-  padding-top 0
-  position relative
+  padding-top 1em
   
 .tab, .tab-content
   clear both
@@ -31,13 +30,29 @@
   text-decoration: none;
   text-align: center;
   background: #f0f0f0;
-  
+  &--para_4
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+    float: left;
+    width: 25%;
+    padding: 1.5em;
+    color: #757575;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    background: #f0f0f0;
+    
 
 //Seleccionar #content#, siempre y cuando esten despues de un #tab1:checked  
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
-#tab4:checked ~ #content4
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7,
+#tab8:checked ~ #content8
   display block
   padding 20px
   background white
@@ -441,3 +456,7 @@ a
   .cambio-de-orden
     order: 1;
     
+//COLORES
+
+.color-grey
+  color $color-grey
