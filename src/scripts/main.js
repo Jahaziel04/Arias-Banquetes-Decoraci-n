@@ -11,12 +11,20 @@ $(".toggle").on("click", function() {
   $(".toggle").parent().toggleClass('active');
 });
 
+
+//Tabs de manteleria
+$(function() {
+    $( "#tabs" ).tabs();
+});
+
+
 //Galeria de servicios
 $('.btn-gallery').on('click', function() {
   $('.products').removeClass('list').addClass('gallery');
   $('.btn-list').removeClass('active');
   $(this).addClass('active');
 });
+
 
 
 //Modo lista de galeria de servicios
