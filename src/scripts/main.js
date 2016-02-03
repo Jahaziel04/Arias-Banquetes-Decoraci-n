@@ -12,12 +12,6 @@ $(".toggle").on("click", function() {
 });
 
 
-//Tabs de manteleria
-$(function() {
-    $( "#tabs" ).tabs();
-});
-
-
 //Galeria de servicios
 $('.btn-gallery').on('click', function() {
   $('.products').removeClass('list').addClass('gallery');
