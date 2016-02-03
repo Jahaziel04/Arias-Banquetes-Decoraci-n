@@ -1,11 +1,96 @@
 //Estilos de los tab de cubre manteles
 
 
+*,
+*:after,
+*:before 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+.tab_container
+  width: 100%
+  margin o auto
+  padding-top 0
+  position relative
+  
+.tab, .tab-content
+  clear both
+  padding-top 10px
+  display none
+
+.label-tab
+  font-weight: 700;
+  font-size: 18px;
+  display: block;
+  float: left;
+  width: 50%;
+  padding: 1.5em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+  
+
+//Seleccionar #content#, siempre y cuando esten despues de un #tab1:checked  
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4
+  display block
+  padding 20px
+  background white
+  
+.tab_container .tab-content p,
+.tab_container .tab-content h3
+  animation: fadeInScale 0.7s ease-in-out
+
+.tab_container [id^="tab"]:checked + label
+  background: #fff;
+  //box-shadow: inset 0 0 0 3px $green-proyect3;
+  border-bottom 2px solid $green-proyect2
+ 
+  i
+    color $green-proyect2
+  
 
 
+label i
+  font-size: 1.3em;
+  margin: 0 0.4em 0 0;
+  
+/*Media query*/
+
+/*Este media query hace que desaparezca el nombre del tap
+cuand el tamaño sea menor a 900px  
+Ademas le un un tamaño mas grande al div contenedor
+*/
+@media only screen and (max-width: 900px)
+  label span
+    display: none;
+  
+  
+  .tab_container
+    width: 100%;
+    
 
 
-//
+/*Content Animation*/
+@keyframes fadeInScale {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+//Fin de los estilos de TAB 
 
 //Estilo de numeros telefonicos
 .number
