@@ -22,6 +22,30 @@ $("#button-eye2").on("click", function() {
   $("#button-eye2").parent().toggleClass('activo');
   //$("#product-content2").slideToggle('slow');
 });
+$("#button-eye3").on("click", function() {
+  $("#button-eye3").parent().toggleClass('activo');
+  //$("#product-content2").slideToggle('slow');
+});
+$("#button-eye4").on("click", function() {
+  $("#button-eye4").parent().toggleClass('activo');
+  //$("#product-content2").slideToggle('slow');
+});
+$("#button-eye5").on("click", function() {
+  $("#button-eye5").parent().toggleClass('activo');
+  //$("#product-content2").slideToggle('slow');
+});
+$("#button-eye6").on("click", function() {
+  $("#button-eye6").parent().toggleClass('activo');
+  //$("#product-content2").slideToggle('slow');
+});
+$("#button-eye7").on("click", function() {
+  $("#button-eye7").parent().toggleClass('activo');
+  //$("#product-content2").slideToggle('slow');
+});
+$("#button-eye8").on("click", function() {
+  $("#button-eye8").parent().toggleClass('activo');
+  //$("#product-content2").slideToggle('slow');
+});
 
 //Galeria de servicios
 $('.btn-gallery').on('click', function() {

@@ -115,8 +115,7 @@
 .centrar
   margin 0 auto
 
-.button-eye
-  color red
+
 .product
   display flex
   flex-direction column
@@ -124,6 +123,25 @@
   align-items center
   border-bottom 4px solid #8bc34a
   border-top 4px solid #8bc34a
+  border-left 1px solid #8bc34a
+  border-right 1px solid #8bc34a
+  box-shadow: 2px 2px 20px #ccc;
+  cursor: pointer;
+  transition box-shadow .2s ease
+  border-radius 5px
+  
+  
+  margin 1.5em 0
+  &:hover 
+    border-top-color $green-proyect3
+    border-bottom-color $green-proyect3
+    box-shadow: 2px 2px 20px #bbb;
+    z-index: 1
+    transition border-color 2s ease
+    .icon-eye-plus
+      color $green-proyect3
+      transition color .3s ease
+
   
   &-content
     display none
