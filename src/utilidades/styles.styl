@@ -1,6 +1,41 @@
+//borde de prueba
+.borde
+  border 1px solid $green-proyect2
+
+.relative
+  position: relative;
+.absolute
+  position: absolute;
+  position: absolute;
+  bottom: -66px;
+  left: -65px;
+  color: #009DEA;
+@media (max-width: 1273px)
+  .absolute
+    font-size: 0
+.overflow
+  overflow: hidden;
+
+.overflow-visible
+  overflow: visible;
+.phon
+  max-width 100%
+
+    
+//@media (min-width: 402px)
+//  .phon
+//    max-width 70%
+
+@media (min-width: 602px)
+  .phon
+    max-width 50%
+  .phon-x
+    max-width 100%
+
+
+
+
 //Estilos de los tab de cubre manteles
-
-
 *,
 *:after,
 *:before 
@@ -30,6 +65,22 @@
   text-decoration: none;
   text-align: center;
   background: #f0f0f0;
+  &--para_3
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    float: left;
+    width: 33.3333333%;
+    padding: .5em;
+    color: #757575;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: left;
+    background: #f0f0f0;
+    height: 5.1em;
+    align-items: center;
+    justify-content: flex-start;
+    
   &--para_4
     font-weight: 700;
     font-size: 18px;
@@ -65,10 +116,12 @@
   background: #fff;
   //box-shadow: inset 0 0 0 3px $green-proyect3;
   border-bottom 2px solid $green-proyect2
- 
+   
   i
     color $green-proyect2
   
+.tab_container [id^="tab"]:checked + .label-tab--para_3
+  border-bottom 4px solid $green-proyect2
 
 
 label i
@@ -88,6 +141,8 @@ Ademas le un un tamaño mas grande al div contenedor
   
   .tab_container
     width: 100%;
+    .label-tab--para_3
+      justify-content center
     
 
 
@@ -150,12 +205,92 @@ Ademas le un un tamaño mas grande al div contenedor
     color white
     font-weight 700
     
-  
+/////
+// // Estilos de la caja de imagen en cada seccion
+
+
+.box-title
+  background-image: url(../img/banner_mobiliario.jpg)
+  height 750px
+  width: 100%
+  background-repeat no-repeat
+  background-size cover
+  -webkit-filter: blur(2px)
+  filter: blur(2px)
+  position absolute
+  top 64px
+  z-index: -1
+  &-manteleria
+    background-image: url(http://www.alquileresbelen.com/images/galerias/_baja/manteles-3.jpg)
+    height 750px
+    width: 100%
+    background-repeat no-repeat
+    background-size cover
+    //-webkit-filter: blur(2px)
+    //filter: blur(2px)
+    position absolute
+    top 64px
+    z-index: -1
+
+  &-meseros
+    background-image: url(../img/meseros.JPG)
+    height 750px
+    width: 100%
+    background-repeat no-repeat
+    background-size cover
+    -webkit-filter: blur(2px)
+    filter: blur(2px)
+    position absolute
+    top 64px
+    z-index: -1
+
+  &-losaycristaleria
+    background-image: url(http://www.estudiahosteleria.com/blog/wp-content/uploads/2012/12/shutterstock_13304368.jpg)
+    height 750px
+    width: 100%
+    background-repeat no-repeat
+    background-size cover
+    //-webkit-filter: blur(2px)
+    //filter: blur(2px)
+    position absolute
+    top 64px
+    z-index: -1
+      
+  &-decoracion
+    background-image: url(http://www.losgnomoseventos.cl/images/large/7.jpg)
+    height 750px
+    width: 100%
+    background-repeat no-repeat
+    background-size cover
+    //-webkit-filter: blur(2px)
+    //filter: blur(2px)
+    position absolute
+    top 64px
+    z-index: -1
+
+  &-banquetes
+    background-image: url(../img/banquete1.jpg)
+    height 750px
+    width: 100%
+    background-repeat no-repeat
+    background-size cover
+    //-webkit-filter: blur(2px)
+    //filter: blur(2px)
+    position absolute
+    top 64px
+    z-index: -1
+/////FIN DEL BLOQUE
+
+
+
 
 //Utilizalo cuando listes cosas y quieres el estilo unorderlist
 .listado
   list-style-type: inherit;
   padding-left 1em
+  &-wth-margin
+    margin-left 4.6em
+    
 
 
 //Estilo de lista para mobiliario( Mesas )
@@ -264,7 +399,9 @@ a
   display inline-block
   border-bottom 5px solid $header-color
   text-shadow -1px 1px 17px rgba(0,0,0,0.4)
-
+.title-deco-medium
+  display flex
+  align-items center
 
 .img
   width: 50%
@@ -275,6 +412,12 @@ a
   width 60%
   margin 0
   padding 0
+  &-60
+    width 60%
+    height 60%
+    margin 0
+    padding 0
+    
 .img40
   width 40%
   margin 0
@@ -288,6 +431,12 @@ a
   width 100%
   margin 0
   padding 0
+  &-100
+    width 100%
+    height 100%
+    margin 0
+    padding 0
+  
   
 //margen arriba, derecha, abajo, izquierda
 .margin

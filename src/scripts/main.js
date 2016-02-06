@@ -12,6 +12,17 @@ $(".toggle").on("click", function() {
 });
 
 
+// Caja de productos de decoración
+$("#button-eye1").on("click", function() {
+  $("#button-eye1").parent().toggleClass('activo');
+  //$("#product-content1").slideToggle('slow');
+});
+
+$("#button-eye2").on("click", function() {
+  $("#button-eye2").parent().toggleClass('activo');
+  //$("#product-content2").slideToggle('slow');
+});
+
 //Galeria de servicios
 $('.btn-gallery').on('click', function() {
   $('.products').removeClass('list').addClass('gallery');

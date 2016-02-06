@@ -44,6 +44,13 @@
     content: "\e906";
     //font-size: 4em;
 }
+
+.icon-rigurusidad-deco:before {
+    content: "\e906";
+    font-size: 11em;
+    color: #a1ca28
+}
+
 .icon-decoracion-giff:before {
     content: "\f042";
 }
@@ -202,7 +209,27 @@
 }
 .icon-triangle-right:before {
     content: "\f05a";
+    font-size: 4.5em;
+    text-align: right;
+    color: $blue;
+    @media (max-width: 911px){
+    
+    text-align: center
+    transform: rotate(90deg)
+    transition rotate .10s ease
+    }
 }
+
+.mixin1{
+    justify-content: flex-end;
+}
+@media (max-width: 911px){
+    .mixin1{
+        justify-content: center;
+    }
+    
+}
+
 .icon-triangle-up:before {
     content: "\f0aa";
 }
@@ -269,4 +296,45 @@
 .icon-lamp:before {
     content: "\e91c";
     font-size: 4em;
+}
+
+.icon-minus:before {
+    content: "\e922";
+}
+
+.icon-plus:after {
+    content: "\e923";
+    font-size: 4em;
+    color: $green-proyect3;
+    display: inline-block;
+    margin: .1em;
+}
+
+.icon-sign-in:before {
+    content: "\f036";
+}
+
+.icon-eye-plus:before {
+    content: "\e925";
+    font-size: 4.5em;
+    //display: inline-block;
+    margin 0 .2em 0 .1em
+}
+
+.icon-mesa:before {
+    content: "\e921";
+}
+
+.icon-box-open:before {
+    content: "\e91d";
+}
+
+.icon-box-close:before {
+    content: "\e920";
+    font-size: 5.5em;
+    color: $green-proyect3;
+}
+
+.icon-entrada:before {
+    content: "\e924";
 }

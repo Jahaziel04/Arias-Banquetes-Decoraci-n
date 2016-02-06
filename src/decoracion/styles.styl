@@ -1,4 +1,20 @@
 
+//Prueba de un nuevo componente
+
+
+
+
+
+//
+.fz25
+  font-size: 2.5em
+//Arreglo de titulo de decoracion
+.box-flex-title
+  display flex
+  //text-align center
+  align-items center
+  &-in
+    display block
 
 .box-title
   background-image: url(../img/banner_mobiliario.jpg)
@@ -92,46 +108,39 @@
   position relative
   min-width 200px
   height 100px
-  
 
-.product
-  box-sizing border-box
-  width 100%
+
+///  
+
+.centrar
   margin 0 auto
-  box-shadow 0 0 5px rgba(0,0,0,0.4)
-  position relative
-  min-width 280px
+
+.button-eye
+  color red
+.product
+  display flex
+  flex-direction column
+  width: 100%
+  align-items center
+  border-bottom 4px solid #8bc34a
+  border-top 4px solid #8bc34a
   
-  figure
-    width 100%
-    img
-      width: 100%
-  &-name
-    //border-left .4em solid $green-proyect2
-    width 100%
-    display inline-block
-    padding .2em 0
-    text-align center
-    border-left .4em solid $green-proyect2
-    //overflow hidden
-    //height 30px
-    &-hide
-      width 100%
-      display inline-block
-      padding .2em 0
-      text-align center
-      border-left .4em solid $green-proyect2
-            
+  &-content
+    display none
+
+.product.activo
+  .toggle
+    background: $header-color;
+    color: white;
     
-  &:hover
-    box-shadow 0 0 15px rgba(0,0,0,0.4)
-.product:hover .product-name
-  border-color $header-color
 
-.product:hover .product-name-hide
-  border-color $header-color
-  //height: 100px
+  div
+    display: flex;
+  figure
+    display: flex;
 
+  
+///FIN DEL BLOQUE
 .title-deco-mas
   margin 4em 0 5em 0
 
@@ -143,25 +152,4 @@
   top 0em
   left .8em
   
-
-@media (min-width: 911px)
-  .product
-    width 60%
-    
-
-    
-
-.phon
-  max-width 100%
-
-    
-//@media (min-width: 402px)
-//  .phon
-//    max-width 70%
-
-@media (min-width: 602px)
-  .phon
-    max-width 50%
-  .phon-x
-    max-width 80%
 
