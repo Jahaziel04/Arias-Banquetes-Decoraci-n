@@ -121,8 +121,8 @@
   flex-direction column
   width: 100%
   align-items center
-  border-bottom 4px solid #8bc34a
-  border-top 4px solid #8bc34a
+  border-bottom 1px solid #8bc34a
+  border-top 1px solid #8bc34a
   border-left 1px solid #8bc34a
   border-right 1px solid #8bc34a
   box-shadow: 2px 2px 20px #ccc;
@@ -137,11 +137,15 @@
     border-bottom-color $green-proyect3
     box-shadow: 2px 2px 20px #bbb;
     z-index: 1
-    transition border-color 2s ease
+    transition border-color, height 2s ease
+    
     .icon-eye-plus
       color $green-proyect3
       transition color .3s ease
-
+    span
+      margin-left 1em
+      transition margin-left .7s ease
+      
   
   &-content
     display none
