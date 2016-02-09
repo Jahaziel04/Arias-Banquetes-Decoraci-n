@@ -6,9 +6,38 @@ $('.box').click(function() {
   
 });
 
+/*/Menu's(hacen que las lista de menú desaparezcan)
+$("#btn-bq1").on("click", function() {
+  $("#listado1").slideToggle('slow');
+  $("#listado1").parent().toggleClass('activo-0-height');
+});
+$("#btn-bq2").on("click", function() {
+  $("#listado2").slideToggle('slow');
+  $("#listado2").parent().toggleClass('activo-0-height');
+});
+$("#btn-bq3").on("click", function() {
+  $("#listado3").slideToggle('slow');
+  $("#listado3").parent().toggleClass('activo-0-height');
+});
+$("#btn-bq4").on("click", function() {
+  $("#listado4").slideToggle('slow');
+  $("#listado4").parent().toggleClass('activo-0-height');
+});
+$("#btn-bq5").on("click", function() {
+  $("#listado5").slideToggle('slow');
+  $("#listado5").parent().toggleClass('activo-0-height');
+});
+$("#btn-bq6").on("click", function() {
+  $("#listado6").slideToggle('slow');
+  $("#listado6").parent().toggleClass('activo-0-height');
+});
+*/
+
+
+
 //Al precionar el toggle le agrega a su padre la clase active
 $(".toggle").on("click", function() {
-  $(".toggle").parent().toggleClass('active');
+  $(".toggle").parent().toggleClass('activo-0-height');
 });
 
 
