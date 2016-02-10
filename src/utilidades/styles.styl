@@ -81,7 +81,22 @@
     color: #757575;
     cursor: pointer;
     text-decoration: none;
-    text-align: left;
+    text-align: center
+    background: #f0f0f0;
+    height: 5.1em;
+    align-items: center;
+    justify-content: flex-start;
+  &--para_3_colors
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    float: left;
+    width: 33.3333333%;
+    padding: .5em;
+    color: #757575;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center
     background: #f0f0f0;
     height: 5.1em;
     align-items: center;
@@ -125,14 +140,38 @@
    
   i
     color $green-proyect2
+
   
 .tab_container [id^="tab"]:checked + .label-tab--para_3
   border-bottom 4px solid $green-proyect2
 
 
+.tab_container [id^="tab"]:checked + .green
+  border-bottom 4px solid #00a86b
+  .icon-shirt-green
+    color #00a86b
+
+.tab_container [id^="tab"]:checked + .pink
+  border-bottom 4px solid #E65D8F
+  .icon-shirt-pink
+    color #E65D8F
+  
+.tab_container [id^="tab"]:checked + .green-p
+  border-bottom 4px solid #B6CC93
+  .icon-shirt-green-p
+    Color #B6CC93
+
+
+.pink
+.green
+.green-p
+  text-align center
+
 label i
   font-size: 1.3em;
   margin: 0 0.4em 0 0;
+  
+
   
 /*Media query*/
 
@@ -149,7 +188,8 @@ Ademas le un un tamaño mas grande al div contenedor
     width: 100%;
     .label-tab--para_3
       justify-content center
-    
+    .label-tab--para_3_colors
+      justify-content center
 
 
 /*Content Animation*/
@@ -239,13 +279,13 @@ Ademas le un un tamaño mas grande al div contenedor
     z-index: -1
 
   &-meseros
-    background-image: url(../img/meseros.JPG)
+    background-image: url(../img/mes.JPG)
     height 750px
     width: 100%
     background-repeat no-repeat
     background-size cover
-    -webkit-filter: blur(2px)
-    filter: blur(2px)
+    //-webkit-filter: blur(2px)
+    //filter: blur(2px)
     position absolute
     top 64px
     z-index: -1
