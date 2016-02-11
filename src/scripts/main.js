@@ -37,7 +37,7 @@ $("#btn-bq6").on("click", function() {
 
 //Al precionar el toggle le agrega a su padre la clase active
 $(".toggle").on("click", function() {
-  $(".toggle").parent().toggleClass('activo-0-height');
+  $(".toggle").parent().toggleClass('active');
 });
 
 

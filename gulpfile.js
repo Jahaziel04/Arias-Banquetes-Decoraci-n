@@ -39,7 +39,7 @@ gulp.task('server', function() {
 gulp.task('build:html', function() {
 	gulp.src(config.html.main)
 		.pipe(jade({
-			pretty: false
+			pretty: true
 			}))
 		.pipe(gulp.dest('./build'));
 	});
