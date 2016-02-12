@@ -1,211 +1,212 @@
-<!DOCTYPE html>
+doctype html
 html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		title Manteleria: Manteles, cubremanteles, chemises, moños y servilletas
+		meta(name="description" content="Ven y renta nuestra Manteleria, todo lo que necesites esta en Arias.")
+		link(rel="stylesheet", href="./css/main.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+	body
+		section(class="box-title-manteleria")
+		include ./menu/template.jade
+		section(class="container")
+			section(class="pru")
+				article(class="row center")
+					div(class="col-12 margintop5") 
+						h1(class="title-section") Mantelería
 
-	meta(charset="UTF-8")
-	meta(name="viewport" content="width=device-width,initial-scale=1")
-	title Manteleria: Manteles, cubremanteles, chemises, moños y servilletas
-	meta(name="description" content="Ven y renta nuestra Manteleria, todo lo que necesites esta en Arias.")
-	link(rel="stylesheet", href="./css/main.css")
-	link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
-body
-	section(class="box-title-manteleria")
-	include ./menu/template.jade
-	section(class="container")
-		section(class="pru")
-			article(class="row center")
-				div(class="col-12 margintop5") 
-					h1(class="title-section") Mantelería
-
-			article(class="row left middle column")
-				div(class="col-10")
-					div(class="phon phon-x text-section") 
-						p(class="parra color-white") Nuestros servicios de Mantelería estan dedicados a cumplir la necesidad de presentación y elegancia, ya que contamos con embestiduras para:
-						p(class="parra color-white") <span class="subrayado negrita">Mesas(Manteles) y sillas(Chemises).</span>
-						p(class="parra color-white") Tambien contamos con un amplio catalogo en colores y texturas para:
-						p(class="parra color-white") <span class="subrayado negrita">Cubre mesas, Moños para sillas y servilletas de tela.</span>
-						p(class="parra color-white") Nos enorgullece decir que tenemos la capacidad de cubrir un evento de hasta <span>2,000</span> personas. Abajo encontraras información detallada sobre nuestros productos. Y claro, la mantelería puede ir incluida en algunos de nuestros paquetes, así que no dudes en ir nuestra sección de paquetes.
-
-
-
-			article(class="row end middle")
-				div(class="col-10")
-					p(class="faq phon phon-x")
-						a(href="faq.html" class="") Preguntas frecuentes 
-						span(class="icon-question-circle")
-
-			
+				article(class="row left middle column")
+					div(class="col-10")
+						div(class="phon phon-x text-section") 
+							p(class="parra color-white") Nuestros servicios de Mantelería estan dedicados a cumplir la necesidad de presentación y elegancia, ya que contamos con embestiduras para:
+							p(class="parra color-white") <span class="subrayado negrita">Mesas(Manteles) y sillas(Chemises).</span>
+							p(class="parra color-white") Tambien contamos con un amplio catalogo en colores y texturas para:
+							p(class="parra color-white") <span class="subrayado negrita">Cubre mesas, Moños para sillas y servilletas de tela.</span>
+							p(class="parra color-white") Nos enorgullece decir que tenemos la capacidad de cubrir un evento de hasta <span>2,000</span> personas. Abajo encontraras información detallada sobre nuestros productos. Y claro, la mantelería puede ir incluida en algunos de nuestros paquetes, así que no dudes en ir nuestra sección de paquetes.
 
 
-			section(class="box-style")
-				article(class="row around middle column margin3")
 
-					figure(class="col-4 phon center cambio-de-orden")
-						img(src="http://www.norvus.com/217/paquete-con-10-cubre-sillas-en-tela-dublin-color-blanco.jpg", alt="", class="img60")
+				article(class="row end middle")
+					div(class="col-10")
+						p(class="faq phon phon-x")
+							a(href="faq.html" class="") Preguntas frecuentes 
+							span(class="icon-question-circle")
 
-					div(class="col-8 phon phon-x")
-						div(class="text-section--sin_sombra")
-							h2(class="title-deco") Chemis
-							p(class="parra") Tenemos disponibles en color:
-							ul(class="listado")
-								li Blanco
-									span(class="cursiva")  (Puedes rentar desde 10 sillas hasta 2,000)
+				
+
+
+				section(class="box-style")
+					article(class="row around middle column margin3")
+
+
+						div(class="col-8 phon phon-x")
+							div(class="text-section--sin_sombra")
+								h2(class="title-deco") Chemis
+								p(class="parra") Tenemos disponibles en color:
+								ul(class="listado")
+									li Blanco
+										span(class="cursiva")  (Puedes rentar desde 10 sillas hasta 2,000)
+										
+									li Negro
+										span(class="cursiva")  (Puedes rentar desde 10 sillas hasta 2,000)
 									
-								li Negro
-									span(class="cursiva")  (Puedes rentar desde 10 sillas hasta 2,000)
-								
-								li Rojo
-									span(class="cursiva")  (Puedes rentar desde ## hasta ##)
+									li Rojo
+										span(class="cursiva")  (Puedes rentar desde ## hasta ##)
 
-				article(class="row center middle column margin3")
-					div(class="col-12")
-						div(class="text-section--sin_sombra")
-							h2(class="title-deco") Moños para silla
+						figure(class="col-4 phon center cambio-de-orden")
+							img(src="http://www.norvus.com/217/paquete-con-10-cubre-sillas-en-tela-dublin-color-blanco.jpg", alt="Chemis", class="img60")
 
-				
-						div(class="tab_container")
-							input(type="radio" class="tab" id="tab3" name="tabsx" checked)
-							label(for="tab3" class="label-tab")
-								i(class="icon-manteleria")
-								span(class="") Basica
+					article(class="row center middle column margin3")
+						div(class="col-12")
+							div(class="text-section--sin_sombra")
+								h2(class="title-deco") Moños para silla
 
-							input(type="radio" class="tab" id="tab4" name="tabsx")
-							label(for="tab4" class="label-tab")
-								i(class="icon-manteleria-dos")
-								span(class="") Fina
+					
+							div(class="tab_container")
+								input(type="radio" class="tab" id="tab3" name="tabsx" checked)
+								label(for="tab3" class="label-tab")
+									i(class="icon-manteleria")
+									span(class="") Basica
 
-							section(id="content3" class="tab-content")
-								h3(class="") Moños de silla tela basica
-								p(class="parra") La mayoria de nuestra manteleria basica esta compuesta de teleas sin textura y colores lisos.
-								figure(class="center")
-									img(src="http://www.elmundodelmantel.com/img/bandas/05g.jpg", alt="" class="img60")
+								input(type="radio" class="tab" id="tab4" name="tabsx")
+								label(for="tab4" class="label-tab")
+									i(class="icon-manteleria-dos")
+									span(class="") Fina
 
-
-							section(id="content4" class="tab-content")
-								h3(class="") Moños de silla tela fina
-								p(class="parra") Nuestra manteleria fina esta compuesta por diferentes texturas de tela y diferentes colores.
-								figure(class="center")
-									img(src="http://i.ehow.com/images/a04/8n/t6/tie-chair-sashes-800x800.jpg", alt="" class="img60")
+								section(id="content3" class="tab-content")
+									h3(class="") Moños de silla tela basica
+									p(class="parra") La mayoria de nuestra manteleria basica esta compuesta de teleas sin textura y colores lisos.
+									figure(class="center")
+										img(src="http://www.elmundodelmantel.com/img/bandas/05g.jpg", alt="Listones de moños tela basica" class="img60")
 
 
-
-			section(class="box-style")
-				article(class="row around middle column margin3")
-					div(class="col-8 phon phon-x")
-						div(class="text-section--sin_sombra")
-							h2(class="title-deco") Manteles
-							p(class="parra") Nuestros productos son los siguientes:
-							ul(class="listado")
-								li(class="list-table parra") Mantel cuadrado pequeño
-									span(class="list-table--normal")  (Renta disponible desde 5 hasta 200 unidades.)
-									ul
-										li(class="") <span class="cursiva normal">Mesa de 4 personas</span>
-
-								li(class="list-table parra") Mantel Cuadrado grande
-									span(class="list-table--normal")  (Renta disponible desde 2 hasta 100 unidades.)
-									ul
-										li(class="") <span class="cursiva normal">Mesa de 12 personas</span>
-								li(class="list-table parra") Mantel circular chico
-									span(class="list-table--normal")  (Renta disponible desde 2 hasta 100 unidades.)
-									ul
-										li(class="") <span class="cursiva normal">Mesa de 10 personas</span>
-
-								li(class="list-table parra") Mantel circular grande
-									span(class="list-table--normal")  (Renta disponible desde 2 hasta 100 unidades.)
-									ul
-										li(class="") <span class="cursiva normal">Mesa de 12 personas</span>
-
-								li(class="list-table parra") Mantel rectangular
-									span(class="list-table--normal")  (Renta disponible desde 2 hasta 100 unidades.)
-									ul
-										li(class="") <span class="cursiva normal">Mesa de 12 personas</span>
-					figure(class="col-4 phon center")
-						img(src="http://cristaleriaselman.com/images/Alquiler/manteleria/mantel_cuadrado_mesa_1.50.jpg", alt="", class="img60")
+								section(id="content4" class="tab-content")
+									h3(class="") Moños de silla tela fina
+									p(class="parra") Nuestra manteleria fina esta compuesta por diferentes texturas de tela y diferentes colores.
+									figure(class="center")
+										img(src="http://i.ehow.com/images/a04/8n/t6/tie-chair-sashes-800x800.jpg", alt="Listones de moños tela fina" class="img60")
 
 
+
+				section(class="box-style")
+					article(class="row around middle column margin3")
+						div(class="col-8 phon phon-x")
+							div(class="text-section--sin_sombra")
+								h2(class="title-deco") Manteles
+								p(class="parra") Nuestros productos son los siguientes:
+								ul(class="listado")
+									li(class="list-table parra") Mantel cuadrado pequeño
+										span(class="list-table--normal")  (Renta disponible desde 5 hasta 200 unidades.)
+										ul
+											li(class="") <span class="cursiva normal">Mesa de 4 personas</span>
+
+									li(class="list-table parra") Mantel Cuadrado grande
+										span(class="list-table--normal")  (Renta disponible desde 2 hasta 100 unidades.)
+										ul
+											li(class="") <span class="cursiva normal">Mesa de 12 personas</span>
+									li(class="list-table parra") Mantel circular chico
+										span(class="list-table--normal")  (Renta disponible desde 2 hasta 100 unidades.)
+										ul
+											li(class="") <span class="cursiva normal">Mesa de 10 personas</span>
+
+									li(class="list-table parra") Mantel circular grande
+										span(class="list-table--normal")  (Renta disponible desde 2 hasta 100 unidades.)
+										ul
+											li(class="") <span class="cursiva normal">Mesa de 12 personas</span>
+
+									li(class="list-table parra") Mantel rectangular
+										span(class="list-table--normal")  (Renta disponible desde 2 hasta 100 unidades.)
+										ul
+											li(class="") <span class="cursiva normal">Mesa de 12 personas</span>
+						figure(class="col-4 phon center")
+							img(src="http://cristaleriaselman.com/images/Alquiler/manteleria/mantel_cuadrado_mesa_1.50.jpg", alt="Manteleria", class="img60")
 
 
 
 
-				
-								
-				article(class="row center middle column margin3")
-					div(class="col-12")
-						div(class="text-section--sin_sombra")
-							h2(class="title-deco") Cubre mesa
-
-				
-						div(class="tab_container")
-							input(type="radio" class="tab" id="tab1" name="tabs" checked)
-							label(for="tab1" class="label-tab")
-								i(class="icon-manteleria")
-								span(class="") Basica
-
-							input(type="radio" class="tab" id="tab2" name="tabs")
-							label(for="tab2" class="label-tab")
-								i(class="icon-manteleria-dos")
-								span(class="") Fina
-
-							section(id="content1" class="tab-content")
-								h3(class="") Cubre mesa tela basica
-								p(class="parra") La mayoria de nuestra manteleria basica esta compuesta de teleas sin textura y colores lisos.
-								figure(class="center")
-									img(src="http://faosevents.files.wordpress.com/2013/12/mantel-fuchsia-120in.png", alt="" class="img60")
-
-
-							section(id="content2" class="tab-content")
-								h3(class="") Cubre mesa tela fina
-								p(class="parra") Nuestra manteleria fina esta compuesta por pasa caminos, diferentes texturas de tela y diferentes colores.
-								figure(class="center")
-									img(src="http://www.pulgalatina.com/media/cache/94/67/94675ced572a6146f8f9aa6933e2b93e.jpg", alt="" class="img60")
 
 
 					
+									
+					article(class="row center middle column margin3")
+						div(class="col-12")
+							div(class="text-section--sin_sombra")
+								h2(class="title-deco") Cubre mesa
 
-
-			article(class="row center middle column margin3 box-style")
-				div(class="col-12")
-					div(class="row center")
-						div(class="col-8")
-							p(class="box-schedule-top") ¿Sólo quieres servicio de mantelería?
-							
-							div(class="box-schedule")
-								p(class="negrita") Pues llámanos a los teléfonos
 					
+							div(class="tab_container")
+								input(type="radio" class="tab" id="tab1" name="tabs" checked)
+								label(for="tab1" class="label-tab")
+									i(class="icon-manteleria")
+									span(class="") Basica
 
-									ul(class="list-contact")
-										li(class="number") 
-											a(class="number-style icon-phone link-gris" href="tel:+9222644586") 9222644586
-											
-										li(class="number") 
-											a(class="number-style icon-mobile link-gris" href="tel:+9221303006") 9221303006
-										li(class="number")
-											a(class="number-style icon-mobile link-gris" href="tel:+9222558116") 9222558116
+								input(type="radio" class="tab" id="tab2" name="tabs")
+								label(for="tab2" class="label-tab")
+									i(class="icon-manteleria-dos")
+									span(class="") Fina
+
+								section(id="content1" class="tab-content")
+									h3(class="") Cubre mesa tela basica
+									p(class="parra") La mayoria de nuestra manteleria basica esta compuesta de teleas sin textura y colores lisos.
+									figure(class="center")
+										img(src="http://faosevents.files.wordpress.com/2013/12/mantel-fuchsia-120in.png", alt="Manteleria basica" class="img60")
+
+
+								section(id="content2" class="tab-content")
+									h3(class="") Cubre mesa tela fina
+									p(class="parra") Nuestra manteleria fina esta compuesta por pasa caminos, diferentes texturas de tela y diferentes colores.
+									figure(class="center")
+										img(src="http://www.pulgalatina.com/media/cache/94/67/94675ced572a6146f8f9aa6933e2b93e.jpg", alt="Manteleria fina" class="img60")
+
+
+						
+
+
+				article(class="row center middle column margin3 box-style")
+					div(class="col-12")
+						div(class="row center")
+							div(class="col-8")
+								p(class="box-schedule-top") ¿Sólo quieres servicio de mantelería?
 								
-								p(class="negrita") ó mándanos un mensaje en nuestro perfil de Facebook
-									ul(class="list-contact")
-										li(class="number")
-											a(class="number-style icon-facebook link-gris" href="https://www.facebook.com/Arias-Banquetes-Decoraci%C3%B3n-914872191930626/" target="_blank") Banquetes y Decoración | Arias
-					div(class="row center")
-						div(class="col-10")
-								div(class="box-schedule-bottom") Horario de oficina:
-									p(class="parra center") 9:00am a 3.00pm | 5:00am a 8:30pm Lunes-Sabado
-									p(class="parra center") Domingo de 9:00am a 2:00pm
+								div(class="box-schedule")
+									p(class="negrita") Pues llámanos a los teléfonos
+						
+
+										ul(class="list-contact")
+											li(class="number") 
+												a(class="number-style icon-phone link-gris" href="tel:+9222644586") 9222644586
+												
+											li(class="number") 
+												a(class="number-style icon-mobile link-gris" href="tel:+9221303006") 9221303006
+											li(class="number")
+												a(class="number-style icon-mobile link-gris" href="tel:+9222558116") 9222558116
+									
+									p(class="negrita") ó mándanos un mensaje en nuestro perfil de Facebook
+										ul(class="list-contact")
+											li(class="number")
+												a(class="number-style icon-facebook link-gris" href="https://www.facebook.com/Arias-Banquetes-Decoraci%C3%B3n-914872191930626/" target="_blank") Banquetes y Decoración | Arias
+						div(class="row center")
+							div(class="col-10")
+									div(class="box-schedule-bottom") Horario de oficina:
+										p(class="parra center") 9:00am a 3.00pm | 5:00am a 8:30pm Lunes-Sabado
+										p(class="parra center") Domingo de 9:00am a 2:00pm
 
 
-			article(class="row center middle column margin3")
-			
-				duv(class="phon col-6 center")
-					button(class="button-green") Ver paquetes
+				article(class="row center middle column margin3")
+				
+					duv(class="phon col-6 center")
+						button(class="button-green") paquetes
 
 
-							
-	include ./footer/template.jade
+								
+		include ./footer/template.jade
 
-	include ./derechos/template.jade		
+		include ./derechos/template.jade		
 
 
-	script(src="./js/bundle.js")
-	script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
-	script(class="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
-	script(src="./js/owl.carousel.min.js")
-	script(src="./js/mains.js")
+		script(src="./js/bundle.js")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+		script(class="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
+		script(src="./js/owl.carousel.min.js")
+		script(src="./js/mains.js")

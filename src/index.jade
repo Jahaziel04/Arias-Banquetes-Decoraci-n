@@ -20,22 +20,59 @@ html(lang="es")
 		include ./caracteristicas/template.jade
 				
 
-		include ./portafolio/template.jade
 
-		h2(class="title") Servicios
+		h2(class="title" id="servicios") Servicios
+
 		section(class="pru")
+			section(class="row middle center column margin3-servicios")
+				article(class="col-11 phon phon-x")
+					div(class="title-question2")
+						p(class="") En <span class="negritas">Arias Banquetes y Decoracón</span> nos esforzamos para que encuentres en un solo lugar todo lo relacionado con tu evento, es por eso que cada vez agregamos mas servicios y producto
+						p(class="negrita") Proximamente: <span class="cursiva">Servicio de animación de fiestas infantiles</span>
+
+
+
 		
 			include ./servicios/template.jade
+		
+		include ./portafolio/template.jade
+		
+
+		section(class="pru")
+		
+			section(class="row center middle column margin3 box-style")
+				article(class="col-7 phon phon-x")
+					h2(class="title-question") ¿Ya viste todo lo que tenemos para ti?
+				
+
+				article(class="col-12")
+					p(class="parra") 
+						span(class="negritas") ¿Tienes dudas? 
+						span ve a tu nuestra sección de 
+						a(href="faq.html", class="link-pink") preguntas frecuentes 
+						span ó 
+						a(href="contacto.html", class="link-pink") contactanos
+						span , aclararemos todas tus dudas sin ningun compromiso.
+
+					p(class="parra") Bien, ya hemos aclarado todas tus dudas llamanos y aparta tu fecha con un 25% del monto total.
+					
+		article(class="row center middle column margin3")
+			div(class="phon col-6 end")
+				a(href="/contacto.html" class="button-contacto") Contacto
+			div(class="phon col-6 start")
+				a(href="/paquetes.html" class="button-green") Paquetes
+				
 
 		include ./footer/template.jade
 
 				
-		include ./derechos/template.jade		
-
+		include ./derechos/template.jade
+		include ./analitics/template.jade
 
 
 		script(src="./js/bundle.js")
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 		script(class="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js")
 		script(src="./js/owl.carousel.min.js")
+		script(src="./js/intense.js")
 		script(src="./js/mains.js")
