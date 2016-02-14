@@ -1,11 +1,49 @@
 
-//Prueba de un nuevo componente
+//Componente de cajas de +productos
 
+.catalogo_container
+  width: 100%
+  margin 0 auto
+  background-color $green-proyect2
+  
+.checkbox, .checkbox-content
+  clear both
+  padding-top 10px
+  display none
+  
+.label-checkbox
+  font-weight: 700;
+  font-size: 18px;
+  display: inline-block-block;
+  //float: left;
+  width: 100px;
+  padding: 1.5em;
+  color: #757575;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  background: #f0f0f0;
+  
+#check1:checked ~ #content-check1,
+#check2:checked ~ #content-check2,
+#check3:checked ~ #content-check3,
+#check4:checked ~ #content-check4,
+#check5:checked ~ #content-check5,
+#check6:checked ~ #content-check6,
+#check7:checked ~ #content-check7,
+#check8:checked ~ #content-check8
+  display block
+  padding 20px
+  background white
 
-
-
-
-
+.catalogo_container .checkbox-content p,
+.catalogo_container .checkbox-content h3
+  animation: fadeInScale 0.7s ease-in-out
+  
+.catalogo_container [id^="check"]:checked + label
+  background-color white
+  i
+    color $green-proyect3
 
 .bgc
   height 90px

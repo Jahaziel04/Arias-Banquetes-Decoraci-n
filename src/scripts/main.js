@@ -109,7 +109,8 @@ $("#button-portafolio").on("click", function(){
 
 
 
-
+///////LIBRERIA DE INTENSE JS
+//Libreria para manejar imagenes
 
 window.requestAnimFrame = (function(){
   return  window.requestAnimationFrame       ||
