@@ -4,26 +4,64 @@
 .catalogo_container
   width: 100%
   margin 0 auto
-  background-color $green-proyect2
+  background-color white
+  position relative
+  overflow hidden
+  margin 1em 0
+  color $color-grey
+  font-weight: 700
+  display inline-block
+  border-radius 3px 0 0 3px
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.08);
+  &:hover
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.22);
   
+
 .checkbox, .checkbox-content
   clear both
   padding-top 10px
   display none
   
 .label-checkbox
+  position: absolute;
+  right: 0;
+  top: 0;
   font-weight: 700;
   font-size: 18px;
-  display: inline-block-block;
-  //float: left;
-  width: 100px;
-  padding: 1.5em;
+  display: inline-block;
+  width: 127px;
+  //padding: 1.1px;
   color: #757575;
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  background: #f0f0f0;
+  background: white
+  //margin: .1em;
   
+.title-deco-show
+  color $color-grey
+  font-weight: 700
+  margin-left 1em
+  display: block;
+  border-bottom: 1px solid rgba(104, 104, 104, 0.18);
+  padding: .85em;
+  margin: 0;
+  
+    
+  
+.label-background-on
+    background-color $green-proyect3
+    width: 48%
+    display inline-block
+    padding .44em 0
+    
+.label-background-off
+    background-color #f2f2f2
+    width: 48%
+    display inline-block
+    padding .44em 0
+    
+
 #check1:checked ~ #content-check1,
 #check2:checked ~ #content-check2,
 #check3:checked ~ #content-check3,
@@ -35,16 +73,27 @@
   display block
   padding 20px
   background white
-
 .catalogo_container .checkbox-content p,
 .catalogo_container .checkbox-content h3
   animation: fadeInScale 0.7s ease-in-out
   
 .catalogo_container [id^="check"]:checked + label
-  background-color white
-  i
-    color $green-proyect3
+  background-color #f2f2f2
+  .label-background-off
+    background $green-proyect3
+    .milo
+      color white
+  
+  .label-background-on
+    background #f2f2f2
+    .kilo
+      color white
+    
 
+.kilo
+  color white
+.milo
+  color white
 .bgc
   height 90px
   min-width 90px
@@ -122,35 +171,6 @@
   margin 0 auto
 
 
-.product
-  display flex
-  flex-direction column
-  width: 100%
-  align-items center
-  //border-bottom 1px solid $green-proyect3
-  //border-top 1px solid $green-proyect3
-  border-left 1px solid $green-proyect3
-  //border-right 1px solid $green-proyect3
-  box-shadow: 2px 2px 20px #ccc;
-  cursor: pointer;
-  transition box-shadow .2s ease
-  
-  
-  
-  margin 1.5em 0
-  &:hover 
-    border-top-color $green-proyect3
-    border-bottom-color $green-proyect3
-    box-shadow: 2px 2px 20px #bbb;
-    z-index: 1
-    transition border-color, height 2s ease
-    
-    .icon-eye-plus
-      color $green-proyect3
-      transition color .3s ease
-    .movespan
-      margin-left 1em
-      transition margin-left .7s ease
       
   
   &-content

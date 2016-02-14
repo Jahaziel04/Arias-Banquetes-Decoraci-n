@@ -85,13 +85,26 @@
 //@media (min-width: 402px)
 //  .phon
 //    max-width 70%
+//Margin top del titulo de cada seccion
+.margintop5
+  margin-top 2em
 
-
+.text-section
+  color $white-proyect
+  margin 1em 0
+  text-align left
+  background-color: rgba(66, 66, 66, 0.18)
+  padding: 1em;
+  //text-shadow -1px 1px 17px rgba(0,0,0,0.4)
 @media (min-width: 602px)
   .phon
     max-width 50%
   .phon-x
     max-width 100%
+  .text-section
+    margin 3em 0
+  .margintop5
+    margin-top 4em
 
 .content-carrusel-deco
   max-width 50%
@@ -127,7 +140,7 @@
   font-size: 18px;
   display: block;
   float: left;
-  width: 100%;
+  width: 50%;
   padding: 1.5em;
   color: #757575;
   cursor: pointer;
@@ -230,9 +243,9 @@
 .green-p
   text-align center
 
-label i
-  font-size: 1.3em;
-  margin: 0 0.4em 0 0;
+//label [class^="icon"]
+ // font-size: 1.3em;
+ // margin: 0 0.4em 0 0;
   
 
   
@@ -293,6 +306,7 @@ Ademas le un un tamaño mas grande al div contenedor
 //Titulo decorado
 .title-deco
   border-bottom 4px solid #8bc34a
+  padding .5em 0
 
 // XXXXXXXXXXXXXX
 //Caja de horario
@@ -491,13 +505,7 @@ a
   text-align left
   text-shadow -1px 1px 17px rgba(0,0,0,0.4)
 
-.text-section
-  color $white-proyect
-  margin 5em 0
-  text-align left
-  background-color: rgba(66, 66, 66, 0.18)
-  padding: 1em;
-  //text-shadow -1px 1px 17px rgba(0,0,0,0.4)
+
   box-shadow: 1px 1px 6px -3px black;
   &-2
     padding 0 0 9em 0
@@ -584,9 +592,6 @@ a
   padding 2em
 
 
-//Margin top del titulo de cada seccion
-.margintop5
-  margin-top 4em
 
 // Fondo blanco personalizado
 .back-grey
