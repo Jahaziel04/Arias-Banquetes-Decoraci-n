@@ -1,4 +1,8 @@
 //
+.float
+  float right
+
+//
 .fz25
   font-size: 2.5em
 .fz16
@@ -485,7 +489,7 @@ a
 
 .box-style
   background-color #FBFBFB
-  color $negro-carbon
+  color #4C4C4C
   text-align left
   box-shadow: -1px 1px 31px -8px rgba(0,0,0,0.4)
 
@@ -550,10 +554,12 @@ a
     margin 0
     padding 0
 @media (min-width: 900px)
-  .img60
+  .img60-mesero
     width: 40%
-    
-    
+//Fix del carrusel    
+figure.item
+  margin: -4px;
+//
 .img40
   width 40%
   margin 0
@@ -585,7 +591,9 @@ a
     margin-bottom 3em
   &-l
     margin-left 3em
-    
+
+.margin2
+  margin 1em 0    
 .margin3
   margin 3em 0
   &-servicios
@@ -756,3 +764,7 @@ a
 
 .your-image-class
   cursor: url('../img/plus_cursor.png') 25 25, auto
+  
+@media (max-width: 670px)
+  .title
+    font-size: 1.1em
