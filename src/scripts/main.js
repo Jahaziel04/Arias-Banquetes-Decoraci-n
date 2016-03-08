@@ -511,12 +511,6 @@ var Intense = (function() {
 })();
 
 
-window.onload = function() {
-    // Intensify all images with the 'intense' classname.
-    var elements = document.querySelectorAll( '.intense' );
-    Intense( elements );
-}
-
 
 
 
@@ -611,4 +605,8 @@ var TxtType = function(el, toRotate, period) {
             css.type = "text/css";
             css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #D41C63}";
             document.body.appendChild(css);
+        
+
+            var elements = document.querySelectorAll( '.intense' );
+            Intense( elements );
         };
